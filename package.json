@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/y-components/y-button",
   "dependencies": {
+    "b_": "^1.1.1",
     "react": "^0.12.2"
   },
   "devDependencies": {
