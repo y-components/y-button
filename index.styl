@@ -1,0 +1,351 @@
+ctx = '.y-button_theme_normal'
+{ctx} {
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+
+    color: #000;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    background: rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+    white-space: nowrap;
+
+    &::-moz-focus-inner
+    {
+        padding: 0;
+
+        border: 0;
+    }
+
+    .y-button__text
+    {
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+        vertical-align: top;
+    }
+
+    .y-button__text
+    {
+        /*
+         * These rules fixes Opera 12+ && IE 9 bug with extra top margin when pressed
+         * Warning: bug still can be reproduced by clicking on button's border
+         * TODO: try to fix
+         */
+        position: relative;
+
+        display: inline-block;
+    }
+
+    .icon
+    {
+        position: relative;
+    }
+
+    &.y-button_type_link
+    {
+        text-decoration: none;
+    }
+
+    /* Decorative element (inner background) */
+    &:before
+    {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+
+        content: '';
+
+        border-radius: 2px;
+        background: #fff;
+    }
+
+    &.y-button_hovered
+    {
+        cursor: pointer;
+
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    &.y-button_focused-hard
+    {
+        z-index: 1;
+
+        background: rgba(178, 142, 0, 0.6);
+        box-shadow: 0 0 0 1px #ffcc00, inset 0 0 0 1px #ffcc00;
+    }
+
+    &.y-button_pressed:before
+    {
+        background: #f6f5f3;
+    }
+
+    &.y-button_checked
+    {
+        background: rgba(153, 122, 0, 0.5);
+
+        &:before
+        {
+            background: #ffeba0;
+        }
+
+        &.y-button_pressed
+        {
+            background: rgba(129, 103, 0, 0.6);
+
+            &:before
+            {
+                background: #fee481;
+            }
+        }
+
+        &.y-button_hovered
+        {
+            background: rgba(129, 103, 0, 0.6);
+        }
+    }
+
+    &.y-button_view_action
+    {
+        background: rgba(191, 153, 0, 0.8);
+
+        &:before
+        {
+            background: #ffdb4d;
+        }
+
+        &.y-button_pressed:before
+        {
+            background: #fc0;
+        }
+
+        &.y-button_hovered
+        {
+            background: rgba(159, 127, 0, 0.8);
+        }
+    }
+
+    &.y-button_view_pseudo
+    {
+        overflow: hidden;
+
+        background: 0;
+
+        &:before
+        {
+            background: 0;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+        }
+
+        &.y-button_hovered:before
+        {
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+        }
+
+        &.y-button_focused-hard:before
+        {
+            box-shadow: 0 0 0 1px rgba(178, 142, 0, 0.6);
+        }
+
+        &.y-button_pressed:before
+        {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        &.y-button_checked
+        {
+            &:before
+            {
+                background: #ffeba0;
+                box-shadow: 0 0 0 1px rgba(153, 122, 0, 0.5);
+            }
+
+            &.y-button_hovered:before
+            {
+                box-shadow: 0 0 0 1px rgba(129, 103, 0, 0.6);
+            }
+
+            &.y-button_pressed:before
+            {
+                background: #fee481;
+                box-shadow: 0 0 0 1px rgba(129, 103, 0, 0.6);
+            }
+        }
+    }
+
+    &.y-button_disabled
+    {
+        background: rgba(0, 0, 0, 0.08);
+
+        &:before
+        {
+            display: none;
+        }
+
+        &.y-button_checked:before
+        {
+            display: block;
+
+            background: #ffeba0;
+        }
+
+        .y-button__text
+        {
+            color: #aaa;
+        }
+
+        .icon
+        {
+            opacity: 0.3;
+        }
+    }
+
+    &.y-button_size_s
+    {
+        font-size: 13px;
+        line-height: 24px;
+
+        .icon
+        {
+            width: 24px;
+        }
+
+        .y-button__text
+        {
+            margin: 0 10px;
+        }
+    }
+
+    &.y-button_size_m
+    {
+        font-size: 13px;
+        line-height: 28px;
+
+        .icon
+        {
+            width: 28px;
+        }
+
+        .y-button__text
+        {
+            margin: 0 13px;
+        }
+    }
+
+    &.y-button_size_l
+    {
+        font-size: 15px;
+        line-height: 32px;
+
+        .icon
+        {
+            width: 32px;
+        }
+
+        .y-button__text
+        {
+            margin: 0 15px;
+        }
+    }
+
+    &.y-button_size_xl
+    {
+        font-size: 18px;
+        line-height: 38px;
+
+        .icon
+        {
+            width: 38px;
+        }
+
+        .y-button__text
+        {
+            margin: 0 18px;
+        }
+    }
+
+    & .icon + .y-button__text
+    {
+        margin-left: 0;
+    }
+
+    .y-button__text:not(:last-child)
+    {
+        margin-right: 0;
+    }
+}
+
+.control-group
+{
+    .radio_checked + .radio {ctx}:before
+    .checkbox_checked + .checkbox {ctx}:before
+    {
+        left: 0;
+    }
+
+    {ctx} {
+        border-radius: 0;
+
+        &:before
+        {
+            right: 0;
+
+            border-radius: 0;
+        }
+
+        &.y-button_checked,
+        &.y-button_focused-hard.button /* Weight of selector should be greater for focused button (#1170) */
+        {
+            &:before
+            {
+                left: 1px;
+                right: 1px;
+            }
+        }
+    }
+
+    > {ctx}:first-child,
+    > :first-child {ctx}
+    {
+        border-radius: 3px 0 0 3px;
+
+        &:before
+        {
+            border-radius: 2px 0 0 2px;
+        }
+    }
+
+    > {ctx}:last-child,
+    > :last-child {ctx}
+    {
+        border-radius: 0 3px 3px 0;
+
+        &:before
+        {
+            border-radius: 0 2px 2px 0;
+            right: 1px;
+        }
+    }
+
+    > :only-child {ctx}
+    {
+        border-radius: 3px;
+
+        &:before
+        {
+            border-radius: 2px;
+        }
+    }
+}
