@@ -7,8 +7,8 @@ var YButton = {
 	render: function () {
 		var classes = b('y-button', {
 			theme: this.props.theme || 'normal',
-			type: this.props.type || false,
-			size: this.props.size || false
+			type: this.props.type,
+			size: this.props.size
 		});
 
 		return (
