@@ -7,7 +7,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.jsx$/, loader: 'jsx-loader?insertPragma=React.DOM&harmony' },
-            { test: /\.css$/, loader: "style-loader!css-loader" }
+            { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader?paths=node_modules/bootstrap-stylus/stylus/' }
         ]
     },
     externals: {
