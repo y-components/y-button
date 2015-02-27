@@ -2,7 +2,7 @@
 'use strict';
 
 var React = require('react');
-var YButton = require('./index.jsx');
+var YButton = require('./index.jsx!');
 
 React.render((
     <div>

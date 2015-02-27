@@ -1,7 +1,7 @@
 var React = require('react');
 var b = require('b_');
 
-var Style = require('./index.styl');
+// var Style = require('./index.styl!');
 
 var YButton = {
 	render: function () {
@@ -22,5 +22,5 @@ var YButton = {
 };
 
 module.exports = React.createClass(YButton);
-module.exports.Style = Style;
+// module.exports.Style = Style;
 module.exports.Class = YButton;
