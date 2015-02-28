@@ -25,5 +25,9 @@ React.render((
         <YButton size="l">
             L size
         </YButton>
+        <br/><br/>
+        <YButton size="l" view="action">
+            Active
+        </YButton>
     </div>
 ), document.getElementById('content'));

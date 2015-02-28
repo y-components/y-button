@@ -31,6 +31,7 @@ var YButton = {
 		var classes = b('y-button', {
 			theme: this.props.theme || 'normal',
 			type: this.props.type,
+			view: this.props.view,
 			size: this.props.size,
 			disabled: this.props.disabled,
 			hovered: this.state.hovered,
