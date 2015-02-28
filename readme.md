@@ -7,7 +7,7 @@
 Install it as npm module:
 
 ```
-npm install y-button
+jspm install y-button
 ```
 
 Add require in your index.js(x) file:
