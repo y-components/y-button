@@ -18,12 +18,10 @@ var YButton = require('y-button');
 React.render(<YButton/>, document.body);
 ```
 
-Build with webpack or jspm.
-
 ## Development
 
 ```bash
+jspm install
 npm install
-npm run start
-open http://localhost:8080
+npm run serve
 ```

@@ -1,0 +1,218 @@
+.y-button_theme_normal {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  color: #000;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+  white-space: nowrap;
+/* Decorative element (inner background) */
+}
+.y-button_theme_normal::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.y-button_theme_normal .y-button__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.y-button_theme_normal .y-button__text {
+/*
+         * These rules fixes Opera 12+ && IE 9 bug with extra top margin when pressed
+         * Warning: bug still can be reproduced by clicking on button's border
+         * TODO: try to fix
+         */
+  position: relative;
+  display: inline-block;
+}
+.y-button_theme_normal .icon {
+  position: relative;
+}
+.y-button_theme_normal.y-button_type_link {
+  text-decoration: none;
+}
+.y-button_theme_normal:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  content: '';
+  border-radius: 2px;
+  background: #fff;
+}
+.y-button_theme_normal.y-button_hovered {
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+}
+.y-button_theme_normal.y-button_focused-hard {
+  z-index: 1;
+  background: rgba(178,142,0,0.6);
+  box-shadow: 0 0 0 1px #fc0, inset 0 0 0 1px #fc0;
+}
+.y-button_theme_normal.y-button_pressed:before {
+  background: #f6f5f3;
+}
+.y-button_theme_normal.y-button_checked {
+  background: rgba(153,122,0,0.5);
+}
+.y-button_theme_normal.y-button_checked:before {
+  background: #ffeba0;
+}
+.y-button_theme_normal.y-button_checked.y-button_pressed {
+  background: rgba(129,103,0,0.6);
+}
+.y-button_theme_normal.y-button_checked.y-button_pressed:before {
+  background: #fee481;
+}
+.y-button_theme_normal.y-button_checked.y-button_hovered {
+  background: rgba(129,103,0,0.6);
+}
+.y-button_theme_normal.y-button_view_action {
+  background: rgba(191,153,0,0.8);
+}
+.y-button_theme_normal.y-button_view_action:before {
+  background: #ffdb4d;
+}
+.y-button_theme_normal.y-button_view_action.y-button_pressed:before {
+  background: #fc0;
+}
+.y-button_theme_normal.y-button_view_action.y-button_hovered {
+  background: rgba(159,127,0,0.8);
+}
+.y-button_theme_normal.y-button_view_pseudo {
+  overflow: hidden;
+  background: 0;
+}
+.y-button_theme_normal.y-button_view_pseudo:before {
+  background: 0;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+.y-button_theme_normal.y-button_view_pseudo.y-button_hovered:before {
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.3);
+}
+.y-button_theme_normal.y-button_view_pseudo.y-button_focused-hard:before {
+  box-shadow: 0 0 0 1px rgba(178,142,0,0.6);
+}
+.y-button_theme_normal.y-button_view_pseudo.y-button_pressed:before {
+  background: rgba(0,0,0,0.05);
+}
+.y-button_theme_normal.y-button_view_pseudo.y-button_checked:before {
+  background: #ffeba0;
+  box-shadow: 0 0 0 1px rgba(153,122,0,0.5);
+}
+.y-button_theme_normal.y-button_view_pseudo.y-button_checked.y-button_hovered:before {
+  box-shadow: 0 0 0 1px rgba(129,103,0,0.6);
+}
+.y-button_theme_normal.y-button_view_pseudo.y-button_checked.y-button_pressed:before {
+  background: #fee481;
+  box-shadow: 0 0 0 1px rgba(129,103,0,0.6);
+}
+.y-button_theme_normal.y-button_disabled {
+  background: rgba(0,0,0,0.08);
+}
+.y-button_theme_normal.y-button_disabled:before {
+  display: none;
+}
+.y-button_theme_normal.y-button_disabled.y-button_checked:before {
+  display: block;
+  background: #ffeba0;
+}
+.y-button_theme_normal.y-button_disabled .y-button__text {
+  color: #aaa;
+}
+.y-button_theme_normal.y-button_disabled .icon {
+  opacity: 0.3;
+}
+.y-button_theme_normal.y-button_size_s {
+  font-size: 13px;
+  line-height: 24px;
+}
+.y-button_theme_normal.y-button_size_s .icon {
+  width: 24px;
+}
+.y-button_theme_normal.y-button_size_s .y-button__text {
+  margin: 0 10px;
+}
+.y-button_theme_normal.y-button_size_m {
+  font-size: 13px;
+  line-height: 28px;
+}
+.y-button_theme_normal.y-button_size_m .icon {
+  width: 28px;
+}
+.y-button_theme_normal.y-button_size_m .y-button__text {
+  margin: 0 13px;
+}
+.y-button_theme_normal.y-button_size_l {
+  font-size: 15px;
+  line-height: 32px;
+}
+.y-button_theme_normal.y-button_size_l .icon {
+  width: 32px;
+}
+.y-button_theme_normal.y-button_size_l .y-button__text {
+  margin: 0 15px;
+}
+.y-button_theme_normal.y-button_size_xl {
+  font-size: 18px;
+  line-height: 38px;
+}
+.y-button_theme_normal.y-button_size_xl .icon {
+  width: 38px;
+}
+.y-button_theme_normal.y-button_size_xl .y-button__text {
+  margin: 0 18px;
+}
+.y-button_theme_normal .icon + .y-button__text {
+  margin-left: 0;
+}
+.y-button_theme_normal .y-button__text:not(:last-child) {
+  margin-right: 0;
+}
+.control-group .radio_checked + .radio .y-button_theme_normal:before,
+.control-group .checkbox_checked + .checkbox .y-button_theme_normal:before {
+  left: 0;
+}
+.control-group .y-button_theme_normal {
+  border-radius: 0;
+}
+.control-group .y-button_theme_normal:before {
+  right: 0;
+  border-radius: 0;
+}
+.control-group .y-button_theme_normal.y-button_checked:before,
+.control-group .y-button_theme_normal.y-button_focused-hard.button:before {
+  left: 1px;
+  right: 1px;
+}
+.control-group > .y-button_theme_normal:first-child,
+.control-group > :first-child .y-button_theme_normal {
+  border-radius: 3px 0 0 3px;
+}
+.control-group > .y-button_theme_normal:first-child:before,
+.control-group > :first-child .y-button_theme_normal:before {
+  border-radius: 2px 0 0 2px;
+}
+.control-group > .y-button_theme_normal:last-child,
+.control-group > :last-child .y-button_theme_normal {
+  border-radius: 0 3px 3px 0;
+}
+.control-group > .y-button_theme_normal:last-child:before,
+.control-group > :last-child .y-button_theme_normal:before {
+  border-radius: 0 2px 2px 0;
+  right: 1px;
+}
+.control-group > :only-child .y-button_theme_normal {
+  border-radius: 3px;
+}
+.control-group > :only-child .y-button_theme_normal:before {
+  border-radius: 2px;
+}

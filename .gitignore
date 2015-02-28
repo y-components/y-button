@@ -2,4 +2,5 @@
 .DS_Store
 npm-debug.log
 node_modules
-bundle.js
+jspm_packages
+config.js
