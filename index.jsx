@@ -1,5 +1,5 @@
 var React = require('react');
-var b = require('b_');
+var b = require('b');
 
 var Style = require('./index.css!');
 
