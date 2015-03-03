@@ -32,7 +32,7 @@ var YButton = {
 			theme: this.props.theme || 'normal',
 			type: this.props.type,
 			view: this.props.view,
-			size: this.props.size,
+			size: this.props.size || 'm',
 			disabled: this.props.disabled,
 			hovered: this.state.hovered,
 			pressed: this.state.pressed

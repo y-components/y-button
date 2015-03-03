@@ -5,13 +5,9 @@ var React = require('react');
 var YButton = require('./index.jsx!');
 
 React.render((
-    <div>
+    <div style={{padding: '10px'}}>
         <YButton disabled>
             Disabled
-        </YButton>
-        <br/><br/>
-        <YButton size="xs">
-            XS size
         </YButton>
         <br/><br/>
         <YButton size="s">
