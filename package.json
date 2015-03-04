@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/y-components/y-button",
   "jspm": {
+    "registry": "jspm",
     "main": "index.jsx!",
     "directories": {
       "lib": ".",
