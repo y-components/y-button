@@ -1,6 +1,6 @@
 {
   "name": "y-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "y-component button",
   "scripts": {
     "serve": "./node_modules/.bin/http-server -p 8080 -o -c-1"
