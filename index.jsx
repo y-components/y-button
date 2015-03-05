@@ -4,6 +4,8 @@ var b = require('b_');
 var Style = require('./index.css!');
 
 var YButton = {
+	displayName: 'y-button',
+
 	getInitialState: function() {
         return {
             hovered: false,
