@@ -2,26 +2,15 @@
 
 :warning: __Under development__
 
-## Usage
+## [Demo](http://y-components.github.io/y-button/)
 
-Install it as npm module:
-
-```
-jspm install y-button
-```
-
-Add require in your index.js(x) file:
-
-```js
-var YButton = require('y-button');
-
-React.render(<YButton/>, document.body);
-```
+__Notice:__ Demo files are not bundled or minified - so first load will be slow.
 
 ## Development
 
 ```bash
+npm install jspm http-server -g
+
 jspm install
-npm install
 npm run serve
 ```
