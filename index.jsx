@@ -42,11 +42,12 @@ var YButton = {
 
 		return (
 			<button
+				{...this.props}
 				className={classes}
 				onMouseEnter={this.__onMouseEnter}
-                onMouseLeave={this.__onMouseLeave}
+				onMouseLeave={this.__onMouseLeave}
 				onMouseDown={this.__onMouseDown}
-                onMouseUp={this.__onMouseUp}>
+				onMouseUp={this.__onMouseUp}>
 				<span className={b('y-button', 'text')}>
 					{this.props.children}
 				</span>
